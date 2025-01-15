@@ -1,0 +1,63 @@
+---
+import Logue from '../../public/logo.png'
+import Image from 'astro/components/Image.astro'
+import whatsapp from '../../public/whatsapp.svg'
+import instagram from '../../public/instagram.svg'
+import tiktok from '../../public/tiktok.svg'
+import facebook from '../../public/facebook.svg'
+---
+<nav id="nav" class=" w-full flex px-8 py-4 backdrop-blur-3xl justify-around backdrop-brightness-90 " >
+    <div class=" flex justify-between w-full " >
+        <a target="_blank" class=" flex flex-row items-center text-center" href="/">
+            <Image class=' rounded-[1000px] overflow-hidden w-[68px] h-16 ' src={Logue} alt="Astro logo" />
+            <strong class=" px-2  font-bold" >DIVINE CREEP'S</strong>
+        </a>    
+        <ul class=" mm:hidden flex flex-row items-center space-x-4">
+            <li>
+                <a href="#creeps" class="hover:text-blue-500">Nuestros Creeps</a>
+            </li>
+            <li>
+                <a href="#gallery" class="hover:text-blue-500">Nosotros</a>
+            </li>
+            <li>
+                <a href="#footer" class="hover:text-blue-500">Contactanos</a>
+            </li>
+
+        </ul>
+        <ul class=" flex items-center " >
+            <li class="pr-2 hover:scale-90 transition " >
+                <a target="_blank" href="https://wa.me/573132754789" class="hover:text-blue-500">
+                    <i>
+                        <Image src={whatsapp} alt="whatsapp" class="w-6 h-6" />
+                    </i>
+                </a>
+            </li>
+            <li class="pr-2 hover:scale-90 transition ">
+                <a target="_blank" href="https://www.instagram.com/divine_creeps/" class="hover:text-blue-500">
+                    <i>
+                        <Image src={instagram} alt="instagram" class="w-6 h-6" />
+                    </i>
+                </a>
+            </li>     
+
+
+            <li class="pr-2 hover:scale-90 transition ">
+                        
+                <a href="https://www.tiktok.com/@divine.creeps" class="hover:text-blue-500">
+                    <i>
+                        <Image src={tiktok} alt="tiktok" class="w-6 h-6" />
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a 
+                target="_blank" 
+                href="https://www.facebook.com/people/Divine-Creeps/100083047373105/?mibextid=wwXIfr&rdid=Pdva204fJ6wqmhDL&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18iAGTpD6a%2F%3Fmibextid%3DwwXIfr" referrerpolicy="" 
+                class="fab fa-github">
+                    <Image class="w-6 h-6" src={facebook} alt="logo de facebook"/>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</nav>

@@ -1,0 +1,107 @@
+---
+import Creep from '../assets/divine.jpg';
+import Creepa2 from '../assets/divinemas.jpg';
+import Creepa3 from '../assets/divinemango.jpg';
+import Image from 'astro/components/Image.astro';
+---
+<section id="creeps" class=" flex relative w-full flex-col pt-10" >
+
+    
+                <div class="flex" >
+                    <article id="element" class=" p-20 flex flex-row bg-slate-50 content-around w-full md:flex md:flex-col  ">
+  
+
+                        <div class="flex mr-4 flex-col m-auto basis-1/2"  >
+                            <h2 class=" text-center text-4xl font-semibol " >
+                                Divine 
+                            </h2>
+                            <p class=" text-2xl font-normal mt-10 md:mb-8 md:text-center  " >
+                                Divine de fresa contiene fresas frescas,banano, helado(opcional) crema, nutella y ten en cuentas que contamos con los productos mas saludables y de calidad
+                            </p>
+                        </div>
+                        <div class="container overflow-hidden flex basis-1/2 " >
+                            <Image data-animation="fade" class="img m-auto h-96 rounded-xl " title="Mision cda ecoauto tunja"  src={Creep} alt="logo de cda ecoauto tunja"></Image>
+                        </div>
+                    </article>
+                </div>
+                <div class="flex" >
+                    <article class=" p-20 flex flex-row bg-slate-50 content-around w-full md:flex md:flex-col  ">
+
+                        <div class="container overflow-hidden  flex basis-1/2 md:hidden " >
+                            <Image data-animation="show" class="img m-auto rounded-3xl h-96 "  title="vision de cda ecoauto tunja"  src={Creepa2} alt="logo de cda ecoauto tunja"></Image>
+                        </div>
+                        <div class=" flex flex-col m-auto basis-1/2"  >
+                            <h2 class=" text-center text-4xl font-bold " >
+                                Divine de Masmelos
+                            </h2>
+                            <p class=" text-2xl font-normal mt-10 pl-10 md:mb-8 md:text-center " >
+                                Nuestra Crepa Divine de Masmelos contiene fresas, cereal, masmelos,crema y helado(opcional), ten en cuentas que contamos con los productos mas saludables
+                            </p>
+                        </div>
+                        <div class="container hidden overflow-hidden basis-1/2 md:flex " >
+                            <Image data-animation="show" class="img m-auto rounded-3xl h-96 "  title="vision de cda ecoauto tunja"  src={Creepa2} alt="logo de cda ecoauto tunja"></Image>
+                        </div>
+
+                    </article>
+                </div>
+                                <div class="flex" >
+                    <article  class=" p-20 flex flex-row bg-slate-50 content-around w-full md:flex md:flex-col  ">
+  
+
+                        <div class="flex mr-4 flex-col m-auto basis-1/2"  >
+                            <h2 class=" text-center text-4xl font-semibol " >
+                                Divine de Mango
+                            </h2>
+                            <p class=" text-2xl font-normal mt-10 md:mb-8 md:text-center  " >
+                                Divine de Mango contiene mango picado, fresas, crema, mango rallado y helado(opcional) ten en cuentas que contamos con los productos mas saludables
+                            </p>
+                        </div>
+                        <div class="container overflow-hidden flex basis-1/2 " >
+                            <Image data-animation="up" class="img m-auto h-96 rounded-xl " title="Mision cda ecoauto tunja"  src={Creepa3} alt="logo de cda ecoauto tunja"></Image>
+                        </div>
+                    </article>
+                </div>
+                               
+
+            
+        
+</section>
+<style>
+    .hero-reverse {
+  flex-direction: row-reverse;
+}
+    
+[data-animation="fade"]{
+    opacity: 0;
+    transform: translate(100%);
+    transition: .6s ease-in-out .3s;
+
+    --opacity: 1;
+    --transform: translate(0);
+}
+
+[data-animation="show"]{
+    opacity: 0;
+    transform: scale(0);
+    transition: .6s ease-in-out .3s;
+
+    --opacity: 1;
+    --transform: scale(1);
+}
+
+[data-animation="up"]{
+    opacity: 0;
+    transform: translateY(100%);
+    transition: .6s ease-in-out .3s;
+
+    --opacity: 1;
+    --transform: translateY(0);
+}
+
+
+.unset{
+    opacity: var(--opacity);
+    transform: var(--transform);
+
+}
+</style>
