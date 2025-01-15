@@ -1,5 +1,10 @@
 ---
 import ButtonTop from "../hooks/Button_top.astro"
+import gallery1 from '../assets/gallery1.jpg'
+import gallery2 from '../assets/gallery2.jpg'
+import gallery3 from '../assets/gallery3.jpg'
+import gallery4 from '../assets/gallery4.jpg'
+import Image from 'astro/components/Image.astro'
 ---
 
 <section id="gallery" >
@@ -7,16 +12,16 @@ import ButtonTop from "../hooks/Button_top.astro"
     <div class="grid mm:grid-cols-1 grid-cols-2 gap-2 px-10">
     
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
+            <Image class="h-auto max-w-full rounded-lg" src={gallery1} alt="galeria 1">
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
+            <Image class="h-auto max-w-full rounded-lg" src={gallery2} alt="galeria 2">
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
+            <Image class="h-auto max-w-full rounded-lg" src={gallery3} alt="galeria 3">
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
+            <Image class="h-auto max-w-full rounded-lg" src={gallery4} alt="galera 4">
         </div>
     </div>
     
